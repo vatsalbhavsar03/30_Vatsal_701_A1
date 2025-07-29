@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello From NodeJS</title>
+</head>
+<body>
+    <h1>AJAX call to /gethello</h1>
+    <button onclick="gethello()">Click Here</button>
+    <p id="output"></p>
+
+    <script>
+        function gethello(){
+            fetch('/gethello')
+            .then(Response => Response.text())
+            .then(data =>{
+                document.getElementById('output').textContent = data;
+            })
+            .catch(error =>{
+                console.error('Error:',error);
+            });
+        }
+    </script>
+</body>
+</html>

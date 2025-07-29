@@ -1,0 +1,21 @@
+{
+  "name": "even-or-odd-checker",
+  "version": "1.0.0",
+  "description": "A simple utility to check whether a number is even or odd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "keywords": [
+    "even",
+    "odd",
+    "checker",
+    "utility",
+    "math"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "even-or-odd-checker": "^1.0.0"
+  }
+}
